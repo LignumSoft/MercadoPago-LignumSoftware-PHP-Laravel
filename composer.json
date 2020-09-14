@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-          "LignumSoftware\\LignumMercadoPago\\": "src/"
+          "LignumSoftware\\LignumMercadoPago\\": "src/LignumMercadoPago/"
         },
         "files": [
             "src/LignumMercadoPago/Helper/MP.php",
