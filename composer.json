@@ -1,0 +1,39 @@
+{
+    "name": "lignumsoftware/mercadopago",
+    "description": "Package to communicate with the MercadoPago SDK for PHP Laravel",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "darkrevenger",
+            "email": "martinfares@hotmail.com",
+            "homepage": "https://lignumsoftware.com.ar/",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0.0",
+        "mercadopago/dx-php":">=2.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+          "LignumSoftware\\LignumMercadoPago\\": "src/"
+        },
+        "files": [
+            "src/Helper/MP.php",
+            "src/Facades/MP.php",
+            "src/config/mercadopago.php"
+        ]
+      },
+      "extra": {
+        "laravel": {
+          "providers": [
+            "LignumSoftware\\LignumMercadoPago\\LignumMercadoPagoServiceProvider"
+          ],
+          "aliases": {
+            "Debugbar": "Barryvdh\\Debugbar\\Facade"
+          }
+        }
+      }
+}
