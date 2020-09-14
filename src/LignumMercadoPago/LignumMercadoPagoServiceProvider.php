@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Providers;
+namespace LignumMercadoPago;
 
 use Illuminate\Support\ServiceProvider;
-use App\Helper\MP;
+use LignumMercadoPago\Helper\MP;
 use MercadoPago;
 
 class LignumMercadoPagoServiceProvider extends ServiceProvider

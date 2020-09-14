@@ -32,7 +32,7 @@
             "LignumSoftware\\LignumMercadoPago\\LignumMercadoPagoServiceProvider"
           ],
           "aliases": {
-            "Debugbar": "Barryvdh\\Debugbar\\Facade"
+            "MP": "LignumSoftware\\LignumMercadoPago\\Facade"
           }
         }
       }

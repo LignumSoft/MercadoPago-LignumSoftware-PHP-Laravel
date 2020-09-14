@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Facades;
+namespace LignumMercadoPago\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
