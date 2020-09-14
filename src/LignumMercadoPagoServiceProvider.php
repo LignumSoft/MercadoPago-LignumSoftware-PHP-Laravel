@@ -11,7 +11,7 @@ class LignumMercadoPagoServiceProvider extends ServiceProvider
 
 	public function boot()
 	{
-		$this->publishes([__DIR__.'/../config/mercadopago.php' => config_path('mercadopago.php')]);
+		$this->publishes([__DIR__.'/config/mercadopago.php' => config_path('mercadopago.php')]);
 	}
 
 	public function register()
