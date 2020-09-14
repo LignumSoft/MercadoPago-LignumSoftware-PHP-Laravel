@@ -68,6 +68,56 @@ Hay dos funciones posibles, una que utilizara los parametros del archivo config/
 
 En el archivo MP de la carpeta HELPER podras encontrar que pasar en cada parametro.
 
+Un ejemplo de la implementacion para utlizar la funcion "createVenta" seria la siguiente:
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Helper\MP;
+
+class CarritoController extends Controller
+{
+    //TEST CONTROLLER PARA TESTEAR MP
+    public function index()
+    {
+        $mp = new MP();
+        $itemArray = Array();
+
+        $a = Array();
+        $a[0] = "ArticuloName1";
+        $a[1] = 1;
+        $a[2] = 1234;
+        array_push($itemArray,$a);
+        
+        $b = Array();
+        $b[0] = "ArticuloName2";
+        $b[1] = 2;
+        $b[2] = 2234;
+        array_push($itemArray,$b);
+        
+        $c = Array();
+        $c[0] = "ArticuloName3";
+        $c[1] = 3;
+        $c[2] = 3234;
+        array_push($itemArray,$c);
+        
+        $cliente = Array();
+        $cliente[0] = "Nombre Cliente";
+        $cliente[1] = "Apellido Cliente";
+        $cliente[2] = "Email@Cliente";
+        $cliente[3] = "36122666";
+
+        $carritoID = 1;
+        $preference = $mp->createVenta($itemArray, $cliente, $carritoID);
+
+        dd($preference);
+    }
+}
+```
+
+
 Para utilizar la funcion createVenta deberas enviar los siguientes parametros:
 ```php
     /**
