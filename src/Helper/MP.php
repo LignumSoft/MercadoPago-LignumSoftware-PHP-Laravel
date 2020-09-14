@@ -7,7 +7,7 @@ use Carbon\Carbon;
 
 class MP {
     // ya no le paso el acess token porque lo seteo en el boot
-    //private $token;
+    private $access_token;
 
     /**
      * expiration_date_from es Carbon::now()->toIso8601String() y expiration_date_to = Carbon::now()->addHour()->toIso8601String() lo que significa que expira en una hora, si se desea customizar estos (y otros) parametros usar la funcion  createVentaCustomRedirect
