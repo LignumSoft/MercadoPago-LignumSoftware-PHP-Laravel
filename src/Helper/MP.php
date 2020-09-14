@@ -22,6 +22,11 @@ class MP {
         // ya no le paso el acess token porque lo seteo en el boot
         //MercadoPago\SDK::setAccessToken("");
 
+		$this->access_token = config('mercadopago.access_token');
+
+		$secret = $this->access_token;
+
+		MercadoPago\SDK::setAccessToken($secret);
         // Create a preference object
         $preference = new MercadoPago\Preference();
 
@@ -87,6 +92,11 @@ class MP {
         // ya no le paso el acess token porque lo seteo en el boot
         //MercadoPago\SDK::setAccessToken("");
 
+		$this->access_token = config('mercadopago.access_token');
+
+		$secret = $this->access_token;
+
+		MercadoPago\SDK::setAccessToken($secret);
         // Create a preference object
         $preference = new MercadoPago\Preference();
 

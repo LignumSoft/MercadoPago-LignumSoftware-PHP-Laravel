@@ -3,22 +3,15 @@
 namespace LignumSoftware\LignumMercadoPago;
 
 use Illuminate\Support\ServiceProvider;
-use LignumMercadoPago\Helper\MP;
-use MercadoPago;
-//
+use App\Helper\MP;
+
 class LignumMercadoPagoServiceProvider extends ServiceProvider
 {
-	protected $access_token;
+	//protected $access_token;
 
 	public function boot()
 	{
 		$this->publishes([__DIR__.'/../config/mercadopago.php' => config_path('mercadopago.php')]);
-
-		$this->access_token = config('mercadopago.access_token');
-
-		$secret = $this->access_token;
-
-		MercadoPago\SDK::setAccessToken($secret);
 	}
 
 	public function register()

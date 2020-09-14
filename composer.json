@@ -19,12 +19,7 @@
     "autoload": {
         "psr-4": {
           "LignumSoftware\\LignumMercadoPago\\": "src/"
-        },
-        "files": [
-            "src/LignumMercadoPago/Helper/MP.php",
-            "src/LignumMercadoPago/Facades/MP.php",
-            "src/LignumMercadoPago/config/mercadopago.php"
-        ]
+        }
       },
       "extra": {
         "laravel": {
