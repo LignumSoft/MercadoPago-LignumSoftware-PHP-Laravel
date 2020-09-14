@@ -1,6 +1,6 @@
 <?php
 
-namespace LignumMercadoPago\Helper;
+namespace LignumSoftware\LignumMercadoPago\Helper;
 
 use MercadoPago;
 use Carbon\Carbon;

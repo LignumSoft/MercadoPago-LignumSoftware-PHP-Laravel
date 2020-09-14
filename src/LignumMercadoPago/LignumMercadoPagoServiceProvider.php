@@ -1,6 +1,6 @@
 <?php
 
-namespace LignumMercadoPago;
+namespace LignumSoftware\LignumMercadoPago;
 
 use Illuminate\Support\ServiceProvider;
 use LignumMercadoPago\Helper\MP;
