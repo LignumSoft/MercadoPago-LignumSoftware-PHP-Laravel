@@ -21,9 +21,9 @@
           "LignumSoftware\\LignumMercadoPago\\": "src/"
         },
         "files": [
-            "src/Helper/MP.php",
-            "src/Facades/MP.php",
-            "src/config/mercadopago.php"
+            "src/LignumMercadoPago/Helper/MP.php",
+            "src/LignumMercadoPago/Facades/MP.php",
+            "src/LignumMercadoPago/config/mercadopago.php"
         ]
       },
       "extra": {
